@@ -546,6 +546,7 @@
 }
 
 -(void)registerWithToken:(NSString*)token withRegistrationType:(NSString*)registrationType
+{
     // Send result to trigger 'registration' event but keep callback
     NSMutableDictionary* message = [NSMutableDictionary dictionaryWithCapacity:2];
     [message setObject:token forKey:@"registrationId"];
